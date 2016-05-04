@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://wap.uchetie.com/sign/in.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <title>优车贴</title>
+    <link type="text/css" rel="stylesheet" href="./login_files/comm.css">
+    <link type="text/css" rel="stylesheet" href="./login_files/style.css">
+    <script src="./login_files/comm.js"></script>
+    <script src="./login_files/jquery-2.1.1.min.js"></script>
+    <script>
+        var API_URL = 'http://api.uchetie.com';
+    </script>
+<style type="text/css"></style></head>
+<body class="login_bg" style="background: #000000">
+
+<div class="main">
+
+    <div class="login_new">
+        <h3><a href="./"> <img src="./login_files/login.png"></a> </h3>
+        <form id="formid" action="./login_files/login.html" method="post">
+            <ul>
+                <li><span class="getregbg"></span><input name="mobile" autocomplete="off" placeholder="请输入手机号码" pattern="^([1][34578])\d{9}$" title="请正确输入手机号码" type="tel"></li>
+                <li><span class="getregbg"></span><input name="password" autocomplete="off" placeholder="请输入密码" data-pattern="^\s*$" title="请输入密码" type="password"></li>
+            </ul>
+            <input name="referer" type="hidden" value="http://wap.uchetie.com/ads/detail-id-3.html">
+            <div class="reg_order"><input type="submit" value="登 录"></div>
+            <div class="agree"><!--<span><input checked="checked" type="checkbox" id="ra1"/><label class="getregbg" for="ra1"></label>同意《<a href="/art/index-p-agreement.html">服务标准及违约责任约定</a> 》</span>--><b><a href="registe.html">注册加盟</a> </b></div>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+<script>
+    function getid(id){
+        return document.getElementById(id);
+    }
+
+    getid("formid").onsubmit=function (){
+
+
+      /*  if(getid("ra1").checked !=true){
+            showMsg("请同意协议");
+            return false;
+        }*/
+        if(checkParams(this) !=false){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+</script>
+
+
+</body></html>

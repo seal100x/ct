@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/seal100x/Desktop/%E4%BC%98%E8%BD%A6%E8%B4%B4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <title>优车贴</title>
+    <link type="text/css" rel="stylesheet" href="./index_files/comm.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/style.css">
+    <script src="./index_files/comm.js"></script><style type="text/css"></style>
+    <script src="./index_files/jquery-2.1.1.min.js"></script>
+    <script>
+        var API_URL = 'http://api.uchetie.com';
+    </script>
+</head>
+<body>
+
+    <!--搜索-->
+    <div id="search_page" class="search_page">
+        <form method="get" action="" enctype="application/x-www-form-urlencoded">
+            <div class="search">
+                <span class="getmainbg"></span><input id="hearder_search001" name="q" autocomplete="off" value="" onblur="onblurstyle(this)" onfocus="focusStyle(this)" oninput="searchAds(this)" class="hearder_search001" type="text" placeholder="search...">
+                <b class="getmainbg" id="closesearch"></b>
+            </div>
+        </form>
+
+        <!--
+        <div class="search_html" >
+
+            <ul class="showli" style="display: none;">
+
+                <li><a href="/main/search.html?q="> 搜索 <b style="display: inline;" id="search_over"></b></a></li>
+            </ul>
+            <div class="hot_search">
+                <dl>
+                    <dt>热门搜索</dt>
+                    <dd><a data-name="iphone6s" onclick="getvlauetosearch(this)">iphone6s</a> </dd>
+                    <dd><a data-name="是洛克" onclick="getvlauetosearch(this)">是洛克</a> </dd>
+                    <dd><a data-name="香水" onclick="getvlauetosearch(this)">香水</a> </dd>
+                    <dd><a data-name="电脑" onclick="getvlauetosearch(this)">电脑</a> </dd>
+                    <dd><a data-name="进口奶粉" onclick="getvlauetosearch(this)">进口奶粉</a> </dd>
+                    <dd><a data-name="智能手机" onclick="getvlauetosearch(this)">智能手机</a> </dd>
+                </dl>
+                <p class="clearfix"></p>
+
+                <div id="clearhistory">
+
+                    <dl>
+                        <dt>历史搜索</dt>
+
+                        <dd><a data-name="2312312" onclick="getvlauetosearch(this)">12312</a></dd>
+
+                    </dl>
+                    <p style="clear: both;"><input onclick="clearHistory(this)" type="button" value="清除历史记录"/></p>
+
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+    <!--搜索-->
+
+    <div class="index" id="index_page">
+
+        <div class="goods_hearder">
+            <div class="logo return"><a class="getmainbg" href="index.html"></a></div>
+            <div class="hearder_goods"></div>
+            <div class="user_home"><b class="getmainbg" id="showsearch" style="display: none;"></b><a class="getmainbg" href="login.html"></a></div>
+        </div>
+        <div style="display: block;height: 45px">&nbsp;</div>
+        
+
+        <div class="content">
+            <div class="select_menu">
+                <select id="index_select" onchange="location.href=&#39;?status=&#39; + this.value">
+                    <option value="0">全部募集</option>
+                    <option value="1">募集中</option>
+                    <option value="-1">募集完成</option>
+                    <option value="-2">已经结束</option>
+                </select>
+            </div>
+
+
+            <!--列表-->
+            <div class="content_dec" style="display: block;">
+                <ul>
+                                        <li><a href="detail.html">
+                        <dl>
+                            <dt>
+                                <span>  29/50车即止</span>
+                                <img src="./index_files/2440926835078931.jpg"> </dt>
+                            <dd><b>U车贴平台</b>  <span></span></dd>
+                            <dd><b>地区：重庆市(大渡口区,江北区,沙坪坝区,九龙坡区,南岸区,北碚区,双桥区,万盛区,渝北区)</b></dd>
+                            <dd><b>时间：</b>2个月</dd>
+                            <dd><b>里程：</b>（最低）500km/月</dd>
+                            <!--<dd><b>广告位置：</b>车前门两侧</dd>-->
+                        </dl>
+
+                        <div><b>佣金</b>￥300/月  </div>
+                    </a>
+                    </li>
+                                        <li><a href="detail.html">
+                        <dl>
+                            <dt>
+                                <span>  35/80车即止</span>
+                                <img src="./index_files/2156734527976083.jpg"> </dt>
+                            <dd><b>重庆推猫科技有限公司</b>  <span></span></dd>
+                            <dd><b>地区：重庆市(渝中区,大渡口区,江北区,沙坪坝区,九龙坡区,南岸区,北碚区)</b></dd>
+                            <dd><b>时间：</b>2个月</dd>
+                            <dd><b>里程：</b>（最低）500km/月</dd>
+                            <!--<dd><b>广告位置：</b>车前门两侧</dd>-->
+                        </dl>
+
+                        <div><b>佣金</b>￥300/月  </div>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>
+            <!--列表-->
+
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    function getid(id){
+
+        return document.getElementById(id);
+    }
+
+    if(getid("closeads")){
+
+        getid("closeads").onclick=function(){
+            this.parentNode.style.display="none";
+        }
+    }
+
+
+    var content_decs=document.getElementsByClassName("content_dec");
+    /*getid("index_select").onchange= function () {
+     var index1 = getId("index_select").selectedIndex;
+     for(var i=0;i<content_decs.length;i++){
+     content_decs[i].style.display="none";
+     }
+     content_decs[index1].style.display="block";
+
+     }*/
+
+    getid("showsearch").onclick= function () {
+
+        getid("search_page").className="showindex";
+        getid("search_page").style.webkitTransition="all 0.5s";
+
+        var s=setTimeout(function(){
+
+            getid("index_page").style.display="none";
+        },500)
+
+    }
+    getid("closesearch").onclick=function (){
+        getid("search_page").className="search_page";
+
+        getid("index_page").style.display="block";
+    }
+
+    var url1="/main/search.html?q="; //全站搜索
+    var url2="/main/search.html?sortid=0&q="; //分类搜索
+
+    //点击input显示搜索条
+    function focusStyle(obj){
+
+        $(".search_html").show();
+    }
+    function onblurstyle(){
+
+    }
+
+    //获取input的值
+    function searchAds(obj){
+
+        if(getid("search_over")){
+            getid("search_over").innerHTML=obj.value;
+            getid("search_over").parentNode.href=url1+obj.value;
+        }
+
+        if(getid("search_overs")){
+            getid("search_overs").innerHTML=obj.value;
+            getid("search_overs").parentNode.href=url2+obj.value;
+        }
+        if(obj.value !=""){
+            $(".showli").show();
+        }else{
+            $(".showli").hide();
+        }
+    }
+    function getvlauetosearch(obj){ //点击历史记录搜索
+
+        getid("hearder_search001").value=obj.dataset.name;
+
+        if(getid("search_over")){
+
+            getid("search_over").innerHTML=obj.dataset.name;
+            getid("search_over").parentNode.href=url1+obj.dataset.name;
+        }
+
+        if(getid("search_overs")){
+            getid("search_overs").innerHTML=obj.dataset.name;
+            getid("search_overs").parentNode.href=url2+obj.dataset.name;
+        }
+
+        $(".showli").show();
+    }
+    function clearHistory(){ //删除历史记录
+
+        getid("clearhistory").parentNode.removeChild(getid("clearhistory"));
+        $.get('/ajax/delkey.html',{},function(data) {
+            return true;
+        });
+    }
+</script>
+<script src="./index_files/tabshow.js"></script>
+
+
+</body></html>

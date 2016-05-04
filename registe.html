@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://wap.uchetie.com/regist/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <title>优车贴</title>
+    <link type="text/css" rel="stylesheet" href="./registe_files/comm.css">
+    <link type="text/css" rel="stylesheet" href="./registe_files/style.css">
+    <script src="./registe_files/comm.js"></script>
+    <script src="./registe_files/jquery-2.1.1.min.js"></script>
+    <script>
+        var API_URL = 'http://api.uchetie.com';
+    </script>
+<style type="text/css"></style></head>
+
+<body style="background: #000000;">
+
+<div class="main">
+
+    <div class="flash_reg">
+
+        <div class="flash_regh1">优车贴，赚钱很简单</div>
+        <dl>
+            <dt>现在已经有</dt>
+            <dd>1076</dd>
+            <dd>位车主加盟</dd>
+
+        </dl>
+
+        <form id="formid" action="http://wap.uchetie.com/regist/step2.html" method="post">
+
+            <div style="text-align: right;"><a style="color: #ffffff;padding-right: 20px;" href="login.html">已有帐号登录</a> </div>
+            <ul>
+                <li><input name="mobile" id="mobile" placeholder="请输入手机号码" pattern="^([1][34578])\d{9}$" title="请正确输入手机号码" type="tel"></li>
+
+
+
+                <input type="hidden" name="sms_type" value="reg">
+                <input type="hidden" name="data" value="eyJoZWFkX2ltZyI6ImFzc2V0c1wvd2FwXC9pbWFnZXNcL3RvdS5qcGcifQ==">
+                <li><input name="password" autocomplete="off" placeholder="请输入密码" data-pattern="^\s*$" title="请输入密码" type="password"></li>
+                <li>
+                    <input type="hidden" name="captcha_key" value="5729be170cf22">
+                    <input name="captcha_code" id="captcha_code" pattern="^\w+" title="请输入图形验证码" placeholder="请输入图形验证码" type="text">
+                    <strong style="padding: 0px;background: none;"><img src="./registe_files/captcha" width="100px" height="44px"> </strong>
+                </li>
+
+                <li>
+                    <input name="code" pattern="^\w+" title="请输入验证码" placeholder="请输入短信验证码" type="tel">
+                    <strong onclick="sendSms(this)">获取验证码</strong>
+                </li>
+            </ul>
+
+            <div class="reg_order"><input type="submit" value="闪电加盟"></div>
+
+            <p><span><input type="checkbox" name="agree" value="1" checked="checked" id="ra1"><label class="getregbg" for="ra1"></label>同意《<a style="display:inline;color: #ffffff;" href="http://wap.uchetie.com/art/index-p-agreement.html">法律声明和隐私政策</a>》</span></p>
+            <p>@2016 重庆快亦转文化传媒有限公司 渝ICP备15000895号</p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function getid(id){
+        return document.getElementById(id);
+    }
+    getid("formid").onsubmit=function (){
+
+        if(getid("ra1").checked !=true){
+            showMsg("请同意协议");
+            return false;
+        }
+        if(checkParams(this) !=false){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+</script>
+
+
+</body></html>
